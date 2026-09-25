@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nugmind Studio - Indie Games & Apps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%);
+            color: #F8FAFC;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4);
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #38BDF8, #818CF8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        p.subtitle {
+            color: #94A3B8;
+            font-size: 1rem;
+            margin-bottom: 28px;
+        }
+        .game-badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #A5B4FC;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .btn-playstore {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2563EB, #4F46E5);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 16px rgba(79, 70, 229, 0.4);
+            transition: all 0.2s ease;
+        }
+        .btn-playstore:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(79, 70, 229, 0.6);
+        }
+        .links {
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .links a {
+            color: #64748B;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .links a:hover {
+            color: #38BDF8;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="logo" src="https://play-lh.googleusercontent.com/y3y3y3y3" onerror="this.src='https://raw.githubusercontent.com/nugmind/lexi-hunt/main/playstore_icon_512.png'" alt="Lexi Hunt Icon">
+        <h1>Nugmind Studio</h1>
+        <p class="subtitle">Crafting engaging, fun, and brain-teasing puzzle games.</p>
+
+        <span class="game-badge">Featured Game: Lexi Hunt</span>
+        <br>
+        <a class="btn-playstore" href="https://play.google.com/store/apps/details?id=com.mrnugi.lexihunt" target="_blank">
+            🎮 Get Lexi Hunt on Google Play
+        </a>
+
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="app-ads.txt">app-ads.txt</a>
+            <a href="mailto:nugmind.studio@gmail.com">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
