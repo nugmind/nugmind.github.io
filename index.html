@@ -28,12 +28,22 @@
             text-align: center;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
         }
-        .logo {
-            width: 96px;
-            height: 96px;
-            border-radius: 20px;
-            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4);
-            margin-bottom: 20px;
+        .logo-wrap {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px auto;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1E3A8A, #0F172A);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+        }
+        .logo-wrap svg {
+            width: 100%;
+            height: 100%;
         }
         h1 {
             font-size: 2rem;
@@ -98,7 +108,27 @@
 </head>
 <body>
     <div class="card">
-        <img class="logo" src="https://play-lh.googleusercontent.com/y3y3y3y3" onerror="this.src='https://raw.githubusercontent.com/nugmind/lexi-hunt/main/playstore_icon_512.png'" alt="Lexi Hunt Icon">
+        <div class="logo-wrap">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100" height="100" rx="22" fill="#0F172A"/>
+                <!-- Tile L -->
+                <rect x="14" y="14" width="32" height="32" rx="8" fill="#3B82F6"/>
+                <text x="30" y="36" fill="white" font-size="20" font-weight="bold" font-family="sans-serif" text-anchor="middle">L</text>
+                <!-- Tile E -->
+                <rect x="54" y="14" width="32" height="32" rx="8" fill="#F59E0B"/>
+                <text x="70" y="36" fill="white" font-size="20" font-weight="bold" font-family="sans-serif" text-anchor="middle">E</text>
+                <!-- Tile X -->
+                <rect x="14" y="54" width="32" height="32" rx="8" fill="#EC4899"/>
+                <text x="30" y="76" fill="white" font-size="20" font-weight="bold" font-family="sans-serif" text-anchor="middle">X</text>
+                <!-- Tile I -->
+                <rect x="54" y="54" width="32" height="32" rx="8" fill="#10B981"/>
+                <text x="70" y="76" fill="white" font-size="20" font-weight="bold" font-family="sans-serif" text-anchor="middle">I</text>
+                <!-- Magnifier Glass -->
+                <circle cx="50" cy="50" r="24" stroke="#FDE047" stroke-width="6" fill="none"/>
+                <line x1="68" y1="68" x2="88" y2="88" stroke="#FDE047" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+        </div>
+
         <h1>Nugmind Studio</h1>
         <p class="subtitle">Crafting engaging, fun, and brain-teasing puzzle games.</p>
 
